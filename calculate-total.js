@@ -5,4 +5,4 @@ function calculateTotal(price, quantity, tax) {
 }
 
 const result = calculateTotal(4.5, 3, 0.08);
-console.log(result);. 14.58
+console.log(result);
