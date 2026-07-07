@@ -13,3 +13,9 @@ function calculateOrderTotal(itemPrice, quantity, taxRate) {
 
 const result = calculateOrderTotal(10, 3, 0.08);
 console.log(result);
+
+const resultSecondOrderTotal = calculateOrderTotal(2, 4, 0.08);
+console.log(resultSecondOrderTotal);
+
+const resultThirdOrderTotal = calculateOrderTotal(15, 2, 0.08);
+console.log(resultThirdOrderTotal);
