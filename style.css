@@ -43,3 +43,23 @@ div {
     border-radius: 8px;
     text-align: center;
 }
+
+.invoice-tool {
+  margin-top: 30px;
+}
+
+.invoice-tool label {
+  margin-right: 6px;
+}
+
+.invoice-tool input {
+  margin-right: 16px;
+  padding: 6px;
+}
+
+#result {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 12px;
+  color: #7a5c3e;
+}

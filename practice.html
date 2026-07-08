@@ -39,7 +39,27 @@
     </div>
 </div>
 
+<div class="invoice-tool">
+    <h2>Order Total Calculator</h2>
+
+    <label for="itemPrice">Item Price ($):</label>
+    <input type="number" id="itemPrice">
+
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity">
+
+    <label for="taxRate">Tax Rate (e.g. 0.08):</label>
+    <input type="number" id="taxRate" step="0.01">
+
+    <button id="calculateBtn">Calculate Total</button>
+
+    <p id="result"></p>
+</div>
+</div>
+
 <a href="https://dailygrindcoffee.com">Check out our menu</a>
+
+<script src="script.js"></script>
 
 </body>
 </html>
