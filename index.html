@@ -1,10 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Dev Journey</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Daily Grind Coffee</title>
+    <meta name="description" content="Fresh coffee, made to order,right in the heart of your neighborhood.">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello, I'm learning to build and sell software.</h1>
-  <p>This page is live proof that I can take an idea from my laptop to the real internet.</p>
+
+    <nav class="navbar">
+        <span>Daily Grind Coffee</span>
+        <a href="#">Menu</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+<h1>Daily Grind Coffee</h1>
+<img src="https://placehold.co/400x200" alt="A cup of latte with foam art at Daily Grind Coffee">
+<p class="tagline">Fresh coffee, made to order.</p>
+
+<div>
+
+<h2>Our Menu</h2>
+
+<div class="menu-container">
+    <div class="menu-item">
+        <h3>Latte</h3>
+        <p>$4.50</p>
+    </div>
+    <div class="menu-item">
+        <h3>Cappuccino</h3>
+        <p>$4.75</p>
+    </div>
+    <div class="menu-item">
+        <h3>Cold Brew</h3>
+        <p>$5.00</p>
+    </div>
+</div>
+
+<div class="invoice-tool">
+    <h2>Order Total Calculator</h2>
+
+    <label for="itemPrice">Item Price ($):</label>
+    <input type="number" id="itemPrice">
+
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity">
+
+    <label for="taxRate">Tax Rate (e.g. 0.08):</label>
+    <input type="number" id="taxRate" step="0.01">
+
+    <button id="calculateBtn">Calculate Total</button>
+
+    <p id="result"></p>
+</div>
+</div>
+
+<a href="https://dailygrindcoffee.com">Check out our menu</a>
+
+<script src="script.js"></script>
+
 </body>
 </html>
