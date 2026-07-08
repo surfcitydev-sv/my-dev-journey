@@ -1,0 +1,23 @@
+h1 {
+    color: brown;
+    font-size: 48px;
+    text-align: center;
+}
+
+body {
+font-family: Arial, sans-serif;
+background-color: #f5f0e8;
+color: #333;
+}
+
+.tagline {
+    font-style: italic;
+    color: #7a5c3e;
+}
+
+div {
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+}
