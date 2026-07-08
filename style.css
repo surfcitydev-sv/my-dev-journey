@@ -21,3 +21,25 @@ div {
     background-color: #fff;
     border-radius: 8px;
 }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.menu-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+.menu-item {
+    background-color: #f5f0e8;
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+}
