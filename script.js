@@ -1,3 +1,7 @@
+const supabaseUrl ="https://rgtcccfpzsdhrffdmnmm.supabase.co";
+const supabaseKey ="sb_publishable_0Dasp9Gk8ARh761XULjkA__wbKT271";
+const supabaseClient = window.supabase.createClient(supabaseUrl, supabaseKey);
+
 function calculateOrderTotal(itemPrice, quantity, taxRate) {
   const subtotal = itemPrice * quantity;
   let discountedSubtotal;
