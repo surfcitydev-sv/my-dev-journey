@@ -1,5 +1,5 @@
 const supabaseUrl ="https://rgtcccfpzsdhrffdmnmm.supabase.co";
-const supabaseKey ="sb_publishable_0Dasp9Gk8ARh761XULjkA__wbKT271";
+const supabaseKey ="sb_publishable_ODasp9PGk8ARh76lXULjkA__wbkT27i";
 const supabaseClient = window.supabase.createClient(supabaseUrl, supabaseKey);
 
 function calculateOrderTotal(itemPrice, quantity, taxRate) {
@@ -24,6 +24,13 @@ button.addEventListener("click", function() {
   const taxRate = Number(document.getElementById("taxRate").value);
 
   const total = calculateOrderTotal(itemPrice, quantity, taxRate);
+
+  supabaseClient
+  .from("orders")
+  .insert([{ item_price: itemPrice, quantity: quantity, tax_rate: taxRate, total: total }])
+  .then(function(response) {
+    console.log(response);
+  });
 
   document.getElementById("result").textContent = `Total: $${total.toFixed(2)}`;
   
